@@ -26,18 +26,17 @@
    * OSSIM >> https://www.alienvault.com/products/ossim
  - Web Application Firewall (WAF)
    * ModSecurity >> https://www.modsecurity.org/
-   * Tutorial ModSecurity on Centos 7 >> https://govcsirt.bssn.go.id/tutorial-instalasi-modsecurity-pada-centos-7/
    * Shadow Daemon >> https://shadowd.zecure.org/overview/introduction/
  - Log Management
    * Elasticksearch Logstash Kibana (ELK) >> https://www.elastic.co/what-is/elk-stack
-   * Installation ELK >> https://www.digitalocean.com/community/tutorials/how-to-install-elasticsearch-logstash-and-kibana-elk-stack-on-ubuntu-14-04
+   * Installation ELK >> https://www.digitalocean.com/community/tutorials/how-to-install-elasticsearch-logstash-and-kibana-elastic-stack-on-ubuntu-22-04?utm_source=chatgpt.com
    * Graylog >> https://www.graylog.org/downloads
    * EventLog >> https://www.xplg.com/
    
 # Automate Data Collection 
  - Run this shell script on your server :
-   * Ubuntu Server >> curl https://raw.githubusercontent.com/adpermana/Incident-Response-Tools/master/UbuntuIR.sh | sh
-   * Centos Server >> curl https://raw.githubusercontent.com/adpermana/Incident-Response-Tools/master/Centos.sh | sh
+   * Ubuntu Server >> curl https://raw.githubusercontent.com/influez/Incident-Response-Tools/refs/heads/master/UbuntuIR.sh | sh
+   * Centos Server >> curl https://raw.githubusercontent.com/influez/Incident-Response-Tools/refs/heads/master/Centos.sh | sh
  - After run, output saved to ./Collection.tar.gz
  
 # Investigation on Linux Server
@@ -50,7 +49,7 @@
    * Linux Cheat Sheet >> http://cheatsheetworld.com/programming/unix-linux-cheat-sheet/
  - Backdoor Search Script
    * Grep >> grep -RPn "(passthru|shell_exec|system|phpinfo|base64_decode|chmod|mkdir|fopen|fclose|fclose|readfile) *\(" nama_direktori
-   * Grep >> grep -Rinw nama_direktori -e "nama_string"
+   * Grep >> grep -Rinw directory_name -e "string_name"
  - Privilege Escalation
    * PE >> https://blog.g0tmi1k.com/2011/08/basic-linux-privilege-escalation/
    * PE >> https://www.rebootuser.com/?p=1623
@@ -60,7 +59,7 @@
  
  # Investigation on Windows OS
  - Data Collection
-   * Automated Data Collection >> https://github.com/adpermana/Incident-Response-Tools/blob/master/WindowsIR.bat
+   * Automated Data Collection >> https://raw.githubusercontent.com/influez/Incident-Response-Tools/refs/heads/master/WindowsIR.bat
    * Windows Command Line Cheat Sheet (SANS) >> https://www.sans.org/security-resources/sec560/windows_command_line_sheet_v1.pdf
    * Redline >> https://www.fireeye.com/services/freeware/redline.html
 
@@ -94,10 +93,11 @@
     - https://www.riskiq.com/
     - https://archive.org/web/
 
-Referensi : 
+Reference :
 - https://github.com/meirwah/awesome-incident-response
 - https://github.com/Cugu/awesome-forensics
 - https://www.alienvault.com/resource-center/ebook/insider-guide-to-incident-response/incident-response-tools
 - Honeypot : https://github.com/zdresearch/OWASP-Honeypot
 - Honeypot : https://github.com/paralax/awesome-honeypots
 - Caldera (Attack and Defend Simulator (Mitre Att&ck)) >> https://github.com/mitre/caldera
+- https://github.com/adpermana/Incident-Response-Tools
